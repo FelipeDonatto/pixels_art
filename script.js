@@ -1,6 +1,6 @@
 const colorPalette = document.getElementById('color-palette')
 const pixels = document.getElementById('pixel-board')
-
+const reset = document.getElementById('button-container')
 
 function changeSelected(event){
     const color = document.querySelector('.selected')
@@ -19,4 +19,12 @@ pixels.addEventListener('click', function(event){
     }
     // demorei umas duas horas nessa mas acredito que consegui fazer da maneira mais eficiente
     // feeling kinda great ngl
+})
+
+reset.addEventListener('click', function(event){
+    const pixelsToErase = document.querySelectorAll('.pixel')
+    for(i = 0; i<pixelsToErase.length; i++){
+        pixelsToErase[i].removeAttribute('id')
+        
+    }
 })

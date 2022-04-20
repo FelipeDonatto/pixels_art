@@ -56,3 +56,10 @@ body {
 #blue {
     background-color: blue;
 }
+
+#button-container {
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    font-family:monospace, fantasy, sans-serif;
+}
