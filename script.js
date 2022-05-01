@@ -55,8 +55,7 @@ function generateline(num){
     const divs = document.createElement('div')
     const px = 'px'
     divs.id = 'pixel-board'
-    divs.style.width = 200 + px
-    divs.style.height = 40 + px
+    divs.style.width = num*42 + px
     divs.style.textAlign = 'center'
     divs.style.margin = 'auto'
     pixels.appendChild(divs)
